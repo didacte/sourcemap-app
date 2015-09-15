@@ -8,6 +8,11 @@ module.exports = function(defaults) {
     }
   });
 
+  app.import({
+    development: 'bower_components/raven-js/dist/raven.js',
+    production: 'bower_components/raven-js/dist/raven.min.js'
+  });
+
   // Use `app.import` to add additional libraries to the generated
   // output files.
   //
